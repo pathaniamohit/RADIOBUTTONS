@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select your gender"
+        android:textSize="30dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/homme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOMME" />
+
+        <RadioButton
+            android:id="@+id/femme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FEMME" />
+
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OTHER" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:onClick="onclickmethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
